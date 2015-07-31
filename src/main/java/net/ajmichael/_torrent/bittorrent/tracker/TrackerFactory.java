@@ -1,21 +1,22 @@
-package net.ajmichael._torrent.bittorrent;
+package net.ajmichael._torrent.bittorrent.tracker;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import net.ajmichael._torrent.bittorrent.metadata.Metadata;
+import net.ajmichael._torrent.bittorrent.tracker.udp.UdpTracker;
 
-class TrackerFactory {
+public class TrackerFactory {
   private static final Logger logger = LoggerFactory.getLogger(TrackerFactory.class);
 
   private final Metadata metadata;
 
-  TrackerFactory(Metadata metadata) {
+  public TrackerFactory(Metadata metadata) {
     logger.info("Constructed TrackerFactory with metadata {}.", metadata);
     this.metadata = metadata;
   }
 
-  Tracker create() {
+  public Tracker create() {
     return new UdpTracker(this.metadata);
   }
 }

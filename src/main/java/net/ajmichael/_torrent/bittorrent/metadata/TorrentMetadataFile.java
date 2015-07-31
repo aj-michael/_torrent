@@ -1,8 +1,7 @@
-package net.ajmichael._torrent.bittorrent;
+package net.ajmichael._torrent.bittorrent.metadata;
 
 import java.io.File;
 
-import net.ajmichael._torrent.bittorrent.metadata.Metadata;
 import net.ajmichael.common.lang.NotImplementedException;
 
 /** TODO(aj-michael) Document this. */

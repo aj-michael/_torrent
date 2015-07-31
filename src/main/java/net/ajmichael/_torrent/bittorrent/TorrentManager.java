@@ -4,6 +4,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import net.ajmichael._torrent.bittorrent.metadata.Metadata;
+import net.ajmichael._torrent.bittorrent.tracker.Tracker;
+import net.ajmichael._torrent.bittorrent.tracker.TrackerFactory;
 
 /**
  * Primary driver for a specific torrent. Drives all phases of tracker communication, downloading

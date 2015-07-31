@@ -1,4 +1,4 @@
-package net.ajmichael._torrent.bittorrent;
+package net.ajmichael._torrent.bittorrent.metadata;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;

@@ -1,4 +1,4 @@
-package net.ajmichael._torrent.bittorrent;
+package net.ajmichael._torrent.bittorrent.tracker;
 
 import java.util.List;
 

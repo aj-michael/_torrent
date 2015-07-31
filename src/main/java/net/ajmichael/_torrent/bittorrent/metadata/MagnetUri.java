@@ -1,4 +1,4 @@
-package net.ajmichael._torrent.bittorrent;
+package net.ajmichael._torrent.bittorrent.metadata;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URI;
