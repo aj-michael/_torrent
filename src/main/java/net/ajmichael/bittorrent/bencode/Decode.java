@@ -32,7 +32,7 @@ public final class Decode {
     }
   }
 
-  static Intermediary<Map<String, Object>> decodeDictionary(String encoded) {
+  public static Intermediary<Map<String, Object>> decodeDictionary(String encoded) {
     Preconditions.checkArgument(encoded.charAt(0) == DICT_CHAR);
     encoded = encoded.substring(1);
     Map<String, Object> dictionary = Maps.newHashMap();
@@ -46,7 +46,7 @@ public final class Decode {
     return Intermediary.of(dictionary, encoded.substring(1));
   }
   
-  static Intermediary<String> decodeString(String encoded) {
+  public static Intermediary<String> decodeString(String encoded) {
     Preconditions.checkArgument(Character.isDigit(encoded.charAt(0)));
     int splitIndex = encoded.indexOf(':');
     int length = Integer.parseInt(encoded.substring(0, splitIndex));
@@ -56,7 +56,7 @@ public final class Decode {
         valueAndRemainder.substring(length));
   }
 
-  static Intermediary<Integer> decodeInteger(String encoded) {
+  public static Intermediary<Integer> decodeInteger(String encoded) {
     Preconditions.checkArgument(encoded.charAt(0) == INT_CHAR);
     int splitIndex = encoded.indexOf(END_CHAR);
     return Intermediary.of(
@@ -64,7 +64,7 @@ public final class Decode {
         encoded.substring(splitIndex + 1));
   }
 
-  static Intermediary<List<Object>> decodeList(String encoded) {
+  public static Intermediary<List<Object>> decodeList(String encoded) {
     Preconditions.checkArgument(encoded.charAt(0) == LIST_CHAR);
     encoded = encoded.substring(1);
     List<Object> list = Lists.newLinkedList();
@@ -108,4 +108,3 @@ public final class Decode {
     }
   }
 }
-

@@ -1,4 +1,4 @@
-package net.ajmichael.bittorrent.metadata;
+package net.ajmichael.bittorrent.metainfo;
 
 import java.util.List;
 import java.util.Optional;

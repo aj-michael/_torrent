@@ -1,4 +1,4 @@
-package net.ajmichael._torrent.client;
+package net.ajmichael._torrent;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

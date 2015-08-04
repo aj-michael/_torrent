@@ -1,4 +1,4 @@
-package net.ajmichael.bittorrent.metadata;
+package net.ajmichael.bittorrent.metainfo;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -15,7 +15,7 @@ import org.junit.runners.JUnit4;
 import com.google.common.collect.ImmutableCollection;
 import com.google.common.collect.ImmutableList;
 
-import net.ajmichael.bittorrent.metadata.MagnetUri;
+import net.ajmichael.bittorrent.metainfo.MagnetUri;
 import net.ajmichael.common.lang.NotImplementedException;
 
 @RunWith(JUnit4.class)

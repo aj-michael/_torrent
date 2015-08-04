@@ -1,11 +1,11 @@
-package net.ajmichael._torrent.client;
+package net.ajmichael._torrent;
 
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.List;
 
-import net.ajmichael._torrent.bittorrent.TorrentManager;
-import net.ajmichael._torrent.bittorrent.metadata.Metadata;
+import net.ajmichael.bittorrent.TorrentManager;
+import net.ajmichael.bittorrent.metainfo.Metainfo;
 
 /**
  * A simple bittorrent application.
@@ -19,7 +19,7 @@ public class ClientApplication implements Runnable {
 
   @Override
   public void run() {
-    Metadata metadata;
+    Metainfo metadata;
     //metadata = new MagnetUri("abc").parse();
     metadata = null;
     torrentManagers.add(new TorrentManager(metadata));
